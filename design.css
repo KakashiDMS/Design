@@ -1,0 +1,115 @@
+:root {
+  --mld: "Monsieur La Doulaise", cursive;
+  --pop: "Poppins", sans-serif;
+  --bkgr: #fef0d3;
+  --acclr: #81522e;
+}
+
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--pop);
+  /* border: 1px solid red; */
+}
+
+/* Container */
+.container {
+  background: var(--bkgr);
+  height: 100vh;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 200px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 25px;
+  color: var(--acclr);
+}
+
+.option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+}
+
+.option ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.option ul li {
+  list-style: none;
+}
+
+.option ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.option button {
+  height: 45px;
+  width: 130px;
+  font-size: 18px;
+  border: none;
+  background: var(--acclr);
+  color: var(--bkgr);
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+/* Main */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+main h2 {
+  font-family: var(--mld);
+  font-size: 70px;
+  color: var(--acclr);
+}
+
+main h1 {
+  font-family: var(--pop);
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  text-align: center;
+  line-height: 75px;
+  color: var(--acclr);
+}
+
+main .images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 750px;
+}
+
+main .images img {
+  width: 20%;
+  height: 350px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition:
+    all ease-in-out,
+    0.5s;
+}
+
+main .images img:hover {
+  width: 30%;
+}
